@@ -16,7 +16,7 @@ function WheatherInfo({weather}: Props) {
 
 
     return (
-        <div>
+        <div >
             <h2>{city}</h2>
             <div className="w-24">
                 <img src={`http://openweathermap.org/img/wn/${icon}.png`}/>
@@ -28,7 +28,7 @@ function WheatherInfo({weather}: Props) {
                 {description}
             </p>
             <div>
-                <p>Sensação térmica: {feelsLike}</p>
+                <p>Sensação térmica: {feelsLike}°C</p>
                 <p>Umidade: {humidity}%</p>
                 <p>Pressão: {pressure}</p>
             </div>

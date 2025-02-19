@@ -28,10 +28,11 @@ function App() {
   return (
     <div className='mx-7 my-7 gap-8 '>
       <h1>Previsão do tempo</h1>
-      <input ref={inputRef} type='text' placeholder='Digite a cidade'/>
+      
+      <input ref={inputRef} type='text' placeholder='Digite a cidade' inputMode='search' onKeyDown={e => e.key === 'Enter' && searchCity()}/>
       <button className='w-32 h-8 rounded-bl-md rounded-se-lg text-cyan-50 font-semibold bg-cyan-600 hover:bg-cyan-700 hover:text-white active:bg-cyan-800'
-        onClick={searchCity}
-        type='button'
+        onDragEnter={searchCity}
+        type='submit'
         >
         Buscar
       </button>

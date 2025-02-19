@@ -31,7 +31,7 @@ function App() {
       
       <input ref={inputRef} type='text' placeholder='Digite a cidade' inputMode='search' onKeyDown={e => e.key === 'Enter' && searchCity()}/>
       <button className='w-32 h-8 rounded-bl-md rounded-se-lg text-cyan-50 font-semibold bg-cyan-600 hover:bg-cyan-700 hover:text-white active:bg-cyan-800'
-        onDragEnter={searchCity}
+        onClick={searchCity}
         type='submit'
         >
         Buscar

@@ -1,4 +1,4 @@
-import { Children, SVGProps } from "react"
+import { SVGProps } from "react"
 
 
 export function BaselineSearch(props: SVGProps<SVGSVGElement>) {

@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import './App.css'
 import axios, { AxiosResponse } from 'axios'
 import WheatherInfo from './components/WeatherInfo'
-import { BaselineSearch, Cloud, FaceInClouds } from './utils/icons'
+import { BaselineSearch, FaceInClouds } from './utils/icons'
 
 function App() {
   const [weather, setweather] = useState<AxiosResponse<any, any>>()

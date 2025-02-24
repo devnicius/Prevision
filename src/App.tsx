@@ -15,7 +15,7 @@ function App() {
     const city = inputRef.current?.value;
     const key = import.meta.env.VITE_API_KEY
 
-    const url: string = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`
+    const url: string = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&lang=pt_br&units=metric`
 
     const apiGetData = await axios.get(url);
 
